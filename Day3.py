@@ -14,3 +14,4 @@ print("You got "+str(mark)+" marks.")   #You got 96 marks.
 
 percentage=float(input("What is your percentage?"))      #What is your percentage?89.5
 print("Your % of mark is "+str(percentage))              #Your % of mark is 89.5
+
