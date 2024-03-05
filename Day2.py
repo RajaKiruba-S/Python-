@@ -22,3 +22,4 @@ print(name.count("u"))       #1(return the count of the given letter)
 print(name.replace("a","s")) #Kirubs Angel
 print(name*3)                #Kiruba AngelKiruba AngelKiruba Angel
 print(name3*3)               #KirubaAngelKirubaAngelKirubaAngel
+
