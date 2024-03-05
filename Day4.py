@@ -22,3 +22,15 @@ slice=slice(7,-4)             #here we are using neg index to denote ending
 
 print(website1[slice])        #google
 print(website2[slice])        #wikipedia
+
+#If statement (a block of code that will execute if the condition is true)
+
+mark=int(input("What is your mark?"))        #What is your mark?--
+if mark>=45:
+    print("You are pass.")                   #50 You are pass.
+elif mark<0:
+    print("bad:( study well")                #-1 bad:( study well
+elif mark==100:
+    print("You got full mark!!")             #100 You are pass.(the order of the is statements does matter)
+else:
+    print("You are fail.")                   #0 You are fail.
