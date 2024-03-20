@@ -24,13 +24,44 @@ except FileNotFoundError:
 ##delete a file
 
 import os
+import shutil
 
 path = "C:\\Users\\Useer\\Desktop\\pythontext.txt"
 try:
-    os.remove(path)
+    os.remove(path)          #delete a file
+    os.rmdir(path)           #used to delete only empty directory
+    shutil.rmtree(path)      #delete a directory containing files
 except FileNotFoundError:
-    print("That file was not found")             #PermissionError: [WinError 5] Access is denied(it won't delete empty folder)
-except PermissionError:
+    print("That file was not found.")             
+except PermissionError:        #PermissionError:[WinError 5] Access is denied(it won't delete empty folder)
     print("You do not have permisiion to delete that.")
+except OSError:
+    print("You can't delete that(empty folder) using that(os.rmdir(path)) function.")
 else:
     print(path+" was deleted.")
+
+##Module  (>>a file containing python code. May contain functions, classes, etc.
+#          >>used with modular programming, which is to seperate a program into parts)
+
+import modulemessages          #we are importing the main module 
+
+modulemessages.hello()
+modulemessages.bye()
+
+import modulemessages as msg
+
+msg.hello()
+msg.bye()
+
+from modulemessages import hello,bye
+
+hello()
+bye()
+
+# all the above 3 type of code will give same o/p
+#Hello, Have a great day!
+#Bye, Have a wonderful time!
+
+help("modules")           #it will give all the available modules in python
+
+
